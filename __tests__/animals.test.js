@@ -31,10 +31,10 @@ describe('backend animal routes', () => {
     return setup(pool);
   });
   it('GET /animals displays animals', async () => {
-    const res = await request(app).get('/animals');
+    const res = await request(app).get('/api/v1/animals');
     expect(res.status).toEqual(200);
     expect(res.body.length).toEqual(4);
-    expect(res.body).toEqual(animals);
+    expect(res.body[0].name).toEqual('Elephants');
   });
   afterAll(() => {
     pool.end();
