@@ -1,9 +1,9 @@
 -- Use this file to define your SQL tables
 -- The SQL in this file will be executed when you run `npm run setup-db`
 DROP TABLE IF EXISTS animals;
-DROP TABLE IF EXISTS members;
+DROP TABLE IF EXISTS keepers;
 
-CREATE TABLE members (
+CREATE TABLE keepers (
   id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   email VARCHAR NOT NULL UNIQUE,
   password_hash VARCHAR NOT NULL
