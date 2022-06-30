@@ -36,12 +36,6 @@ const mockKeeper = {
   password: '123456',
 };
 
-const mockPretender = {
-  name: 'Andria',
-  email: 'andria@notzoo.com',
-  password: '654321',
-};
-
 const registerAndLogin = async (keeperProps = {}) => {
   const password = keeperProps.password ?? mockKeeper.password;
 
