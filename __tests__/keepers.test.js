@@ -10,6 +10,7 @@ const mockKeeper = {
   password: '123456',
 };
 
+// user to test email without proper email tag
 const mockPretender = {
   name: 'Andria',
   email: 'andria@notzoo.com',
